@@ -1,7 +1,6 @@
 package org.farid.api.model.headers.miniproyecto.service;
 
 import org.apache.coyote.BadRequestException;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

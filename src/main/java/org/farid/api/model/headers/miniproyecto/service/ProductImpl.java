@@ -1,6 +1,7 @@
 package org.farid.api.model.headers.miniproyecto.service;
 
 
+import org.apache.coyote.BadRequestException;
 import org.farid.api.model.headers.miniproyecto.dto.ProductDTO;
 import org.farid.api.model.headers.miniproyecto.mapper.ProductMapper;
 import org.farid.api.model.headers.miniproyecto.repository.ProductRepository;
@@ -33,7 +34,9 @@ public class ProductImpl implements IService<ProductDTO>{
     }
 
     @Override
-    public ProductDTO getById(Long id) {
+    public ProductDTO getByid(Long id) throws BadRequestException {
         return ProductMapper.mapFrom(productRepository.findById(id).orElseThrow());
     }
+
+
 }

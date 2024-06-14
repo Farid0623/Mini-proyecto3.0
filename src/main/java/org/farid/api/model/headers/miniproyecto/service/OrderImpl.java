@@ -23,7 +23,9 @@ public class OrderImpl implements IService<OrderDTO> {
     }
 
     @Override
-    public OrderDTO getById(Long id) throws BadRequestException {
+    public OrderDTO getByid(Long id) throws BadRequestException {
         return null;
     }
+
+
 }

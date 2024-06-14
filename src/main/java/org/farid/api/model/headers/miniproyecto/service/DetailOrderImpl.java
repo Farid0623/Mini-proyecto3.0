@@ -22,7 +22,8 @@ public class DetailOrderImpl implements IService<DetailOrderDTO> {
     }
 
     @Override
-    public DetailOrderDTO getById(Long id) throws BadRequestException {
+    public DetailOrderDTO getByid(Long id) throws BadRequestException {
         return null;
     }
-}
+
+    }

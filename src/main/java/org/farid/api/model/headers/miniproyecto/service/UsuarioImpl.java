@@ -1,14 +1,14 @@
 package org.farid.api.model.headers.miniproyecto.service;
 
-import co.edu.co.proyecto_spring.dto.UsuarioDto;
 import org.apache.coyote.BadRequestException;
+import org.farid.api.model.headers.miniproyecto.dto.UserDTO;
 
 import java.util.List;
 
-public class UsuarioImpl implements IService<UsuarioDto> {
+public class UsuarioImpl implements IService<UserDTO> {
 
     @Override
-    public List<UsuarioDto> listAll() {
+    public List<UserDTO> listAll() {
         return null;
     }
 
@@ -18,12 +18,14 @@ public class UsuarioImpl implements IService<UsuarioDto> {
     }
 
     @Override
-    public UsuarioDto add(UsuarioDto user) {
+    public UserDTO add(UserDTO user) {
         return null;
     }
 
     @Override
-    public UsuarioDto getById(Long id) throws BadRequestException {
+    public UserDTO getByid(Long id) throws BadRequestException {
         return null;
     }
+
+
 }

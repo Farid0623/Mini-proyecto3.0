@@ -1,10 +1,9 @@
 package org.farid.api.model.headers.miniproyecto.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.Builder;
-import org.antlr.v4.runtime.misc.NotNull;
+import jakarta.validation.constraints.*;
 
-@Builder
+
 public record DetailOrderDTO(
         @NotNull(message = "No puede ser null")
         @NotBlank
