@@ -6,11 +6,12 @@ import org.farid.api.model.headers.miniproyecto.dto.ProductDTO;
 import org.farid.api.model.headers.miniproyecto.mapper.ProductMapper;
 import org.farid.api.model.headers.miniproyecto.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
+@Service
 public class ProductImpl implements IService<ProductDTO>{
 
    @Autowired

@@ -2,9 +2,10 @@ package org.farid.api.model.headers.miniproyecto.service;
 
 import org.apache.coyote.BadRequestException;
 import org.farid.api.model.headers.miniproyecto.dto.DetailOrderDTO;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class DetailOrderImpl implements IService<DetailOrderDTO> {
     @Override
     public List<DetailOrderDTO> listAll() {
